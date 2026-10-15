@@ -96,6 +96,23 @@ Pointers between indexes: `CORE_SOURCES.md` in `saturn/`, `pig/`, and `saturn-pi
 
 ---
 
+## Agent-native control (example)
+
+Hub-style CRUD for one host CLI (`saturn-sessions`):
+
+```text
+saturn-sessions — active desktop / Pi / subagent snapshot
+  Read     saturn-sessions list [--json|--human]
+  Read     saturn-sessions list --desktop [--json|--human]
+  Read     saturn-sessions resolve <alias> [--json|--human]
+  Update   saturn-sessions display-on-desktop <path-or-id|alias> [--json|--human]
+  Read     saturn-sessions peek ...        # see --help
+```
+
+agent native control surfaces out of the box.
+
+---
+
 ## Component catalog
 
 | Layer | Role | Lives at | Operate with |
